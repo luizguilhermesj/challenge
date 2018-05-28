@@ -31,7 +31,7 @@ Dado que a Base B precisa ser utilizada por sistemas de ML, não acredito que ut
 Este precisa ser muito rápido ele pode ser similiar ao Serviço da base B, pensando em escalabilidade, porém como a informação não é crítica, penso que podemos replica-la em uma camada de cache, que pode ser apenas um banco de dados com performance otimizada ou algum serviço de indexação como Solr, ElasticSearch, etc.
 
 ### Serviço de Identidade
-Responsável por identificar os serviços autorizados à utilizar o Serviço de Dados e quais são suas permissões, como por exemplo um serviço que tem acesso ao recurso /consumidor, mas não ao /credito.
+Responsável por identificar os serviços autorizados à utilizar o Serviço de Dados e quais são suas permissões, como por exemplo um serviço que tem acesso ao recurso `/debts`, mas não ao `/score`.
 
 ### Serviço de Dados
 Este é o principal ponto de entrada do sistema. É nele que consequimos fazer requisições via uma API para obter as informações que precisamos. Portanto poderíamos ter estes endpoints, por exemplo:
